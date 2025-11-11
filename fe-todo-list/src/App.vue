@@ -1,36 +1,48 @@
 <!-- JavaScript -->
 <script setup lang="ts">
-import AppHeader from './components/AppHeader.vue';
-
+import AppHeader from './components/AppHeader.vue'
+import Task from './components/Task.vue'
 </script>
 
 <!-- HTML -->
 <template>
-  <AppHeader /> 
+  <AppHeader />
+  <Task :isChecked="true">true Komponen Task </Task>
+  <Task :isChecked="false">false Komponen Task sa</Task>
 </template>
-
 
 <!-- CSS -->
 <style>
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family:'monospace',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family:
+    'monospace',
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Open Sans',
+    'Helvetica Neue',
+    sans-serif;
 }
 
-body{
+body {
   background: #f3f4f6;
 }
-#app{
+#app {
   min-height: 100vh;
-  background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   padding: 2rem;
-  -webkit-font-smoothing : antialiased;
-  -mox-osx-font-smoothing : grayscale;
+  -webkit-font-smoothing: antialiased;
+  -mox-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  font-size:1.2 rem;
-
+  font-size: 1.2 rem;
 }
 </style>
